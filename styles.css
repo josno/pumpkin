@@ -1,3 +1,141 @@
 body {
 	box-sizing: border-box;
+	margin: 0;
+	height: 100vh;
+	background: black;
+}
+
+.container {
+	width: 60%;
+	height: 50%;
+	border: 1px solid orange;
+	margin: 10% auto;
+	padding: 80px 50px 50px;
+}
+
+.flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.pumpkin {
+	position: relative;
+	border: 2px solid #f46d0e;
+	width: 56%;
+	height: 90%;
+	background: #f46d0e;
+	border-radius: 46%;
+}
+
+.pumpkin-layer-one {
+	width: 75%;
+	height: 101%;
+	border-radius: 47%;
+	left: 10%;
+	top: 0%;
+}
+
+.lines {
+	position: absolute;
+	border: 2px solid #eb912d;
+	border-left: 10px solid #eb912d;
+	border-right: 10px solid #eb912d;
+	border-top: 0px;
+	border-bottom: 0px;
+}
+
+.pumpkin-layer-two {
+	width: 38%;
+	height: 101%;
+	border-radius: 47%;
+	left: 28%;
+	top: 0%;
+}
+
+.eyes-area {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+.eyes-one {
+	/* background: #C3570B; */
+	width: 20%;
+	height: 18%;
+	left: 20%;
+	top: 20%;
+	transform: rotate(10deg);
+}
+
+.eyes-two {
+	width: 20%;
+	height: 18%;
+	right: 20%;
+	top: 20%;
+	transform: rotate(-10deg);
+}
+
+.eyes {
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-left: 40px solid transparent;
+	border-right: 40px solid transparent;
+	border-bottom: 50px solid #c3570b;
+}
+
+.nose {
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-bottom: 50px solid #c3570b;
+	bottom: 50%;
+	left: 45%;
+}
+
+.mouth {
+	background: #c3570b;
+	width: 51%;
+	height: 22%;
+	top: 60%;
+	left: 24%;
+	position: absolute;
+	border-radius: 0% 0% 300px 300px;
+}
+
+.tooth-one {
+	position: absolute;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-top: 30px solid #f46d0e;
+	z-index: 99;
+	left: 15%;
+	top: -1%;
+}
+
+.tooth-two {
+	position: absolute;
+	border-left: 30px solid transparent;
+	border-right: 30px solid transparent;
+	border-top: 40px solid #f46d0e;
+	z-index: 99;
+	right: 15%;
+	top: -1%;
+}
+
+.stem {
+	height: 73px;
+	width: 50px;
+	position: absolute;
+	border: 1px solid #573e38;
+	width: 48px;
+	left: 45%;
+	top: -15%;
+	border-radius: 10px 20px 64px 15px;
+	transform: rotate(30deg);
+	background: #573e38;
+	z-index: 99;
 }
